@@ -130,7 +130,7 @@ const IconFontPicker: FC<Props> = ({ ctx }) => {
                   <div className="search-input-wrapper">
                     <TextInput
                       value={searchTerm}
-                      autoFocus={true}
+                      autoFocus={false}
                       onChange={(newValue) => {
                         setCurrentPage(1);
                         setSearchTerm(newValue);
