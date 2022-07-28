@@ -10,21 +10,21 @@ DatoCMS plugin to visually select icons from any icon font.
 - **search**: icons can be searched
 - **filters**: optional filters can be used to show only a subset of icons, based on their names
 
-Preview: https://raw.githubusercontent.com/rolandtoth/datocms-plugin-iconfontpicker/main/docs/preview.gif
+[Preview](https://raw.githubusercontent.com/rolandtoth/datocms-plugin-iconfontpicker/main/docs/preview.gif)
 
 ## Configuration
 
-### Plugin configuration
+### Plugin settings
 
-Plugin settings: https://raw.githubusercontent.com/rolandtoth/datocms-plugin-iconfontpicker/main/docs/plugin-settings.png
+[Plugin settings](https://raw.githubusercontent.com/rolandtoth/datocms-plugin-iconfontpicker/main/docs/plugin-settings.png)
 
-### General Options
+#### General Options
 
 A field that holds general options in JSON format.
 
 - **iconPrefix**: if the icon font requires a prefix CSS class to show up (eg. `my-prefix icon-arrow-right`), you an add it here (optional)
 
-### Icon Names (required)
+#### Icon Names (required)
 
 The plugin needs to know the icon names (that is, the CSS class names). They can be added as a JSON array in this field.
 
@@ -39,7 +39,7 @@ Example:
 
 These names will be returned when selecting an icon, see the "Usage" section below for more.
 
-### Filters (optional)
+#### Filters (optional)
 
 If you would like to add filter checkboxes to the UI, you can set "filters" here.
 
@@ -63,7 +63,7 @@ Example:
 ]
 ```
 
-### CSS Styles
+#### CSS Styles
 
 The plugin was made to be self-contained and to be used with any icon fonts. Because of this, all font-related CSS should be put here:
 
@@ -74,7 +74,8 @@ The plugin was made to be self-contained and to be used with any icon fonts. Bec
 
 After installing the plugin, you'll need to add a new JSON field type to a block or model, go to the Presentation tab, and select "Icon Font Picker" for the Field editor.
 
-JSON field configuration: https://raw.githubusercontent.com/rolandtoth/datocms-plugin-iconfontpicker/main/docs/json-field-configuration.png
+[JSON field configuration](
+https://raw.githubusercontent.com/rolandtoth/datocms-plugin-iconfontpicker/main/docs/json-field-configuration.png)
 
 ## Usage
 
