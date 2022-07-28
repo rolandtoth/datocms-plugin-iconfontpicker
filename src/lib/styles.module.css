@@ -1,0 +1,224 @@
+:root {
+	--textarea-height: 160px;
+}
+
+.form-textarea {
+    width: 100%;
+    border-color: var(--border-color);
+	min-height: var(--textarea-height);
+	max-width: 100%;
+	overflow: auto;
+	padding: 16px;
+	resize: vertical;
+	box-sizing: border-box;
+	line-height: 1.25;
+	font-family: monospace;
+	font-size: 13px;
+}
+
+.form-label {
+    color: var(--light-body-color);
+	display: block;
+    margin-top: var(--spacing-m);
+    margin-bottom: var(--spacing-s);
+}
+
+.text-label {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: var(--font-size-xxs);
+	letter-spacing: 0.01rem;
+}
+
+.code-editor {
+	fontFamily: 'ui-monospace, SFMono-Regular, SF Mono, Consolas, Liberation Mono, Menlo, monospace';
+	font-size: 14px;
+}
+
+.code-editor-wrapper {
+	max-height: var(--textarea-height);
+	overflow: auto;
+	border-color: var(--border-color);
+	border-style: solid;
+	border-width: 1px;
+	box-sizing: border-box;
+	transition: all 100ms ease 0s;
+	width: 100%;
+	margin-top: var(--spacing-s);
+}
+
+.space-top {
+	margin-top: var(--spacing-m);
+}
+
+.fieldset {
+	border: 0;
+	box-sizing: border-box;
+	display: grid;
+	grid-gap: var(--spacing-s);
+	/* 7.4589rem is a magic number that ensures the right hand edge of the grid
+	lines up nicely with the form/field container set up by DatoCMS */
+	grid-template-columns: repeat(auto-fit, minmax(0, 7.4589rem));
+	padding: 0;
+}
+
+.label {
+	padding: 0;
+}
+
+.radio {
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	width: 1px;
+}
+
+.mark {
+	border-color: var(--border-color);
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	color: var(--base-body-color);
+	cursor: pointer;
+	font-size: var(--font-size-xs);
+	padding: var(--spacing-s);
+	text-align: center;
+	transition: all .15s cubic-bezier(.55, 0, .1, 1);
+}
+
+.color-preview {
+	border-radius: 3px;
+	height: var(--spacing-xl);
+	width: 100%;
+}
+
+.image-preview-container {
+	background: var(--light-bg-color);
+	border-radius: 3px;
+	padding-top: 100%;
+	position: relative;
+}
+
+.image-preview {
+	bottom: 0;
+	height: calc(100% - var(--spacing-m) * 2);
+	left: 0;
+	margin: var(--spacing-m);
+	object-fit: contain;
+	object-position: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: calc(100% - var(--spacing-m) * 2);
+}
+
+.name {
+	display: block;
+	line-height: 1;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: var(--spacing-s);
+	overflow: hidden;
+	padding: 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.label input:checked ~ .mark {
+	border-color: var(--accent-color);
+}
+
+.label:hover .mark,
+.label:focus .mark {
+	box-shadow: 0 0 0 3px var(--semi-transparent-accent-color);
+}
+
+.status-bar {
+	align-items: center;
+	display: flex;
+	margin-bottom: var(--spacing-m);
+	margin-top: var(--spacing-s);
+}
+
+.status-message {
+	font-size: var(--font-size-s);
+	margin-left: var(--spacing-s);
+	color: var(--add-color);
+	margin-top: 2px;
+}
+
+.status-icon {
+	color: var(--notice-color);
+	width: 22px;
+}
+
+.status-bar.has-error .status-message {
+	color: var(--alert-color);
+}
+
+.textarea-bar {
+	display: flex;
+	align-items: center;
+}
+
+.docs-container {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	text-decoration: none;
+}
+
+.docs-container:hover,
+.docs-container:focus {
+	text-decoration: underline;
+}
+
+.docs-icon {
+	width: 16px;
+	color: var(--base-body-color);
+}
+
+.docs-label,
+.docs-label:focus span,
+.docs-label:hover span,
+.docs-label:active span,
+.docs-label:visited span {
+	font-size: var(--font-size-s);
+	color: var(--base-body-color);
+	margin-left: var(--spacing-s);
+}
+
+.preset-help {
+	display: flex;
+	align-items: center;
+	background: var(--light-color);
+	padding: var(--spacing-l);
+	border-radius: 5px;
+	line-height: 1;
+}
+
+.preset-help-header {
+	font-weight: bold;
+}
+
+.preset-help-link {
+	margin-left: var(--spacing-m);
+}
+
+.presets-config-form {
+	margin-top: var(--spacing-l);
+}
+
+.notice {
+	background: var(--warning-bg-color);
+	padding: var(--spacing-m);
+	border-radius: 5px;
+	font-size: var(--font-size-xs);
+	margin-bottom: var(--spacing-m);
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--warning-color);
+}
