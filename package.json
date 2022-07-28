@@ -1,7 +1,11 @@
 {
   "name": "datocms-plugin-iconfontpicker",
-  "homepage": "",
-  "version": "0.1.0",
+  "homepage": "https://github.com/rolandtoth/datocms-plugin-iconfontpicker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rolandtoth/datocms-plugin-iconfontpicker"
+  },
+  "version": "0.1.1",
   "description": "DatoCMS plugin to visually select icon from any icon font.",
   "dependencies": {
     "@types/node": "^16.11.26",
